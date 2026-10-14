@@ -357,3 +357,7 @@ If you want, I can:
 - Add even simpler React To-Do List example
 - Add even simpler React Calculator example
 - Add even simpler React Quiz app example
+
+git config --global --list --> check
+git config --global user.name "username"
+git config --global user.email "email"
