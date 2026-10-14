@@ -361,3 +361,19 @@ If you want, I can:
 git config --global --list --> check
 git config --global user.name "username"
 git config --global user.email "email"
+
+echo Checking Node.js...
+node --version
+npm --version
+
+cd /d "%WORKSPACE%\simple-react-app"
+
+if not exist package.json exit /b 1
+
+call npm install
+if errorlevel 1 exit /b 1
+
+call npm run build
+if errorlevel 1 exit /b 1
+
+echo React application built successfully!
